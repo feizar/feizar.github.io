@@ -1,0 +1,98 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.resume-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Header Section */
+header {
+    background-color: #f2ede9;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    background-color: #ccc;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.header-info h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #222;
+}
+
+.header-info p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* Two Column Layout */
+.main-content {
+    display: flex;
+    gap: 40px;
+}
+
+.left-col {
+    flex: 1;
+}
+
+.right-col {
+    flex: 2;
+}
+
+/* Section Styling */
+h2 {
+    font-size: 16px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+p, li {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+ul {
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+.job {
+    margin-bottom: 20px;
+}
+
+.job-title {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.date {
+    float: right;
+    font-style: italic;
+}
+
+.company {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
