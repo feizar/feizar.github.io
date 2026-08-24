@@ -166,7 +166,7 @@ async function renderLoop() {
                     }
 
                     if (outputTensor && typeof outputTensor.dataSync === 'function') {
-                        rawScore = outputTensor.dataSync()[0];
+                        rawScore = outputTensor.dataSync()[0]*-1;
                         
                         // Compare raw output against threshold
                         predictedIndex = rawScore >= CONFIDENCE_THRESHOLD ? 1 : 0; 
