@@ -8,7 +8,7 @@ const loadingOverlay = document.getElementById('loading-overlay');
 
 // --- Configuration ---
 // Sigmoid threshold: Raw Score >= CONFIDENCE_THRESHOLD -> Correct (1), else Incorrect (0)
-const CONFIDENCE_THRESHOLD = 0.002; 
+const CONFIDENCE_THRESHOLD = 0.9; 
 
 const classLabels = {
     0: 'Incorrect',
