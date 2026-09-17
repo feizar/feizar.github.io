@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+#container {
+    position: relative;
+    /* Aspect ratio 1800:900 = 2:1 */
+    width: 90vw;
+    max-width: 1200px;
+    aspect-ratio: 2 / 1;
+    border: 4px solid #333;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #000;
+}
+
+/* Mirror the video and canvas for a natural feel */
+#webcam, #output_canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: scaleX(-1); /* Flips the image like a mirror */
+}
+
+#output_canvas {
+    z-index: 10;
+}
+
+#loading-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.hidden {
+    display: none !important;
+}
